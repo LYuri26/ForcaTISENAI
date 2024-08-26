@@ -38,14 +38,15 @@ const palavras = [
   "realidade virtual",
   "big data",
   "data mining",
-  "API",
-  "JSON",
-  "XML",
+  "api",
+  "json",
+  "xml",
   "criptomoeda",
   "blockchain",
   "deep learning",
-  "DNS",
-  "HTTP",
+  "dns",
+  "http",
+  "Lenon",
 ];
 
 const dicas = [
@@ -96,4 +97,5 @@ const dicas = [
   "Subcampo de IA focado em aprendizado profundo",
   "Sistema que traduz nomes de domínios para IPs",
   "Protocolo de transferência de hipertexto",
+  "Melhor Instrutor de Informática do SENAI.",
 ];
