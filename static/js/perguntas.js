@@ -46,7 +46,7 @@ const palavras = [
   "deep learning",
   "dns",
   "http",
-  "Lenon",
+  "lenon",
 ];
 
 const dicas = [
