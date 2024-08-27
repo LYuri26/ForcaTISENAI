@@ -131,6 +131,13 @@ img.senai-logo {
   margin: 0 auto;
 }
 
+/* Estilo para display-4 */
+.display-4 {
+  font-size: 2.5rem; /* Tamanho da fonte para telas maiores */
+  font-weight: 300;
+  line-height: 1.2;
+}
+
 /* Media Queries para telas menores */
 @media (max-width: 768px) {
   .container {
@@ -158,6 +165,10 @@ img.senai-logo {
   img.senai-logo {
     max-width: 30%;
   }
+
+  .display-4 {
+    font-size: 2rem; /* Ajuste para tablets e dispositivos intermediários */
+  }
 }
 
 @media (max-width: 480px) {
@@ -183,5 +194,9 @@ img.senai-logo {
 
   img.senai-logo {
     max-width: 40%;
+  }
+
+  .display-4 {
+    font-size: 1.5rem; /* Ajuste para dispositivos móveis */
   }
 }
