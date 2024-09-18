@@ -1,10 +1,11 @@
+// Função para desenhar o boneco
 function desenharBoneco() {
   const forca = document.getElementById("forca");
 
   // Limpar o boneco antes de redesenhar
   forca.innerHTML = "";
 
-  // Base da forca
+  // Desenhar a forca (estruturas básicas)
   const palo = document.createElement("div");
   palo.style.position = "absolute";
   palo.style.bottom = "0px";
@@ -35,7 +36,7 @@ function desenharBoneco() {
   travessaSuperior.style.backgroundColor = "#333";
   forca.appendChild(travessaSuperior);
 
-  // Adiciona a cabeça se restam 5 ou menos tentativas
+  // Desenho progressivo do boneco conforme as tentativas restantes
   if (tentativasRestantes <= 5) {
     const cabeca = document.createElement("div");
     cabeca.style.position = "absolute";
@@ -49,7 +50,6 @@ function desenharBoneco() {
     forca.appendChild(cabeca);
   }
 
-  // Adiciona o corpo se restam 4 ou menos tentativas
   if (tentativasRestantes <= 4) {
     const corpo = document.createElement("div");
     corpo.style.position = "absolute";
@@ -62,9 +62,7 @@ function desenharBoneco() {
     forca.appendChild(corpo);
   }
 
-  // Adiciona os braços se restam 3 ou menos tentativas
   if (tentativasRestantes <= 3) {
-    // Braço esquerdo
     const bracoEsquerdo = document.createElement("div");
     bracoEsquerdo.style.position = "absolute";
     bracoEsquerdo.style.bottom = "130px";
@@ -77,7 +75,6 @@ function desenharBoneco() {
   }
 
   if (tentativasRestantes <= 2) {
-    // Braço direito
     const bracoDireito = document.createElement("div");
     bracoDireito.style.position = "absolute";
     bracoDireito.style.bottom = "131px";
@@ -89,9 +86,7 @@ function desenharBoneco() {
     forca.appendChild(bracoDireito);
   }
 
-  // Adiciona as pernas se restam 1 ou menos tentativas
   if (tentativasRestantes <= 1) {
-    // Perna esquerda
     const pernaEsquerda = document.createElement("div");
     pernaEsquerda.style.position = "absolute";
     pernaEsquerda.style.top = "170px";
@@ -104,7 +99,6 @@ function desenharBoneco() {
   }
 
   if (tentativasRestantes <= 0) {
-    // Perna direita
     const pernaDireita = document.createElement("div");
     pernaDireita.style.position = "absolute";
     pernaDireita.style.top = "169px";
@@ -115,4 +109,11 @@ function desenharBoneco() {
     pernaDireita.style.backgroundColor = "blue";
     forca.appendChild(pernaDireita);
   }
+}
+
+// Função para resetar o boneco
+function resetarBoneco() {
+  const forca = document.getElementById("forca");
+  forca.innerHTML = ""; // Limpa todas as partes do boneco
+  console.log("Boneco resetado");
 }
