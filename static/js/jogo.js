@@ -42,15 +42,17 @@ function atualizarDisplayDoJogo() {
 }
 
 // Função para adivinhar letra
+// Função para adivinhar uma letra
 function adivinharLetra() {
   if (!jogoAtivo) return; // Impede novas tentativas se o jogo acabou
 
   const entradaAdivinhacao = document.getElementById("guess");
   const letraAdivinhada = entradaAdivinhacao.value.toLowerCase();
 
+  // Modifica a expressão regular para aceitar letras, números, hífen e underline
   if (
     letraAdivinhada.length === 1 &&
-    /^[a-záéíóúãõç\s]+$/.test(letraAdivinhada)
+    /^[a-záéíóúãõç0-9_\-\s]+$/.test(letraAdivinhada) // Aceita letras, números, hífen (-) e underline (_)
   ) {
     if (letrasAdivinhadas.indexOf(letraAdivinhada) === -1) {
       letrasAdivinhadas.push(letraAdivinhada);
@@ -64,12 +66,13 @@ function adivinharLetra() {
       }
 
       if (letraNaoEncontrada) {
-        tentativasRestantes--;
+        tentativasRestantes--; // Diminui tentativas se a letra não estiver na palavra
       }
 
       atualizarDisplayDoJogo();
       desenharBoneco(); // Atualiza o boneco
 
+      // Verifica se a palavra foi completamente adivinhada
       let palavraCompleta = true;
       for (let i = 0; i < palavraAtual.length; i++) {
         if (
@@ -83,16 +86,17 @@ function adivinharLetra() {
 
       if (palavraCompleta) {
         document.getElementById("status").textContent = "Você venceu!";
-        jogoAtivo = false; // Desativa o jogo após vencer
+        jogoAtivo = false; // Desativa o jogo após vitória
       } else if (tentativasRestantes <= 0) {
         document.getElementById(
           "status"
         ).textContent = `Você perdeu! A palavra era: ${palavraAtual}`;
-        jogoAtivo = false; // Desativa o jogo após perder
+        jogoAtivo = false; // Desativa o jogo após derrota
       }
     }
   }
 
-  entradaAdivinhacao.value = "";
+  entradaAdivinhacao.value = ""; // Limpa o campo de input após a tentativa
 }
+
 document.addEventListener("DOMContentLoaded", iniciarJogo);
