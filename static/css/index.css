@@ -1,102 +1,645 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-  }
-
-  img.senai-logo {
-    max-width: 60%; /* Define a largura máxima da imagem */
-  }
-  
-  header {
-    background-color: #005caa;
-    color: #fff;
-    padding: 15px 0;
-  }
-
-h1 {
-  color: #005caa; /* Cor azul atualizada */
+  font-family: 'Arial', sans-serif; /* Fonte moderna */
+  background-color: #fafafa; /* Fundo suave */
+  color: #333; /* Cor padrão do texto */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+img.senai-logo {
+  max-width: 40%; /* Define a largura máxima da imagem */
 }
 
-h2 {
-  color: #333;
-}
-
-h3 {
-  color: #005caa; /* Cor azul atualizada */
-}
-
-p {
-  font-size: 18px;
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.btn-play {
-  width: 220px;
-  height: 50px;
-  border: none;
-  outline: none;
+header {
+  background-color: #005caa;
   color: #fff;
-  background: #111;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.main-content {
+  max-width: 800px; /* Limite a largura do conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 20px;
+  background-color: #fff; /* Fundo branco */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.text-section {
+  margin-bottom: 20px; /* Espaçamento entre seções de texto */
+}
+
+.highlighted-text {
+  font-size: 1.2em; /* Tamanho da fonte */
+  color: #444; /* Cor do texto */
+  margin: 15px 0; /* Espaçamento */
+  line-height: 1.6; /* Altura da linha para melhor legibilidade */
+  background-color: #f0f8ff; /* Fundo leve para destaque */
+  padding: 15px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  border: 1px solid #b0e0e6; /* Bordas suaves */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+  transition: transform 0.2s; /* Transição suave */
+}
+
+.highlighted-text:hover {
+  transform: scale(1.02); /* Efeito de zoom ao passar o mouse */
+}
+
+.call-to-action {
+  font-size: 1.1em; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 20px; /* Espaçamento acima */
+  color: #007bff; /* Cor azul para destaque */
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza os botões */
+}
+
+.btn {
+  border: none;
+  padding: 15px 20px;
+  margin: 10px;
   cursor: pointer;
+  border-radius: 5px;
+  flex: 0 0 calc(50% - 20px); /* Ajusta para duas colunas */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+/* Adilson Gomides Junior */
+#adilson {
+  background-color: #4CAF50;
+  color: white;
+}
+#adilson:hover {
+  background-color: #45a049;
+}
+
+/* ALI HASSAN IBRAHIM FILHO */
+#ali-hassan {
+  background-color: #f44336;
+  color: white;
+}
+#ali-hassan:hover {
+  background-color: #e53935;
+}
+
+/* ALYSSON EDUARDO SILVA */
+#alysson {
+  background-color: #2196F3;
+  color: white;
+}
+#alysson:hover {
+  background-color: #1e88e5;
+}
+
+/* Ana Clara Alves Pereira */
+#ana-clara {
+  background-color: #ff9800;
+  color: white;
+}
+#ana-clara:hover {
+  background-color: #fb8c00;
+}
+
+/* Ana Letícia Ferreira Silvano */
+#ana-leticia {
+  background-color: #9C27B0;
+  color: white;
+}
+#ana-leticia:hover {
+  background-color: #8e24aa;
+}
+
+/* Anna Clara Felipe da Silva */
+#anna-clara {
+  background-color: #673AB7;
+  color: white;
+}
+#anna-clara:hover {
+  background-color: #5e35b1;
+}
+
+/* Anna Victorya Sousa Carmo de Oliveira */
+#anna-victorya {
+  background-color: #E91E63;
+  color: white;
+}
+#anna-victorya:hover {
+  background-color: #d81b60;
+}
+
+/* Anderson dos Anjos Nascimento */
+#anderson {
+  background-color: #009688;
+  color: white;
+}
+#anderson:hover {
+  background-color: #00897b;
+}
+
+/* Antonio Kayllan de Sousa e Sousa */
+#antonio-kayllan {
+  background-color: #00BCD4;
+  color: white;
+}
+#antonio-kayllan:hover {
+  background-color: #00acc1;
+}
+
+/* Arthur Neves Liazar */
+#arthur-neves {
+  background-color: #FFEB3B;
+  color: black;
+}
+#arthur-neves:hover {
+  background-color: #fdd835;
+}
+
+/* Bianca Martins Oliveira */
+#bianca {
+  background-color: #795548;
+  color: white;
+}
+#bianca:hover {
+  background-color: #6d4c41;
+}
+
+/* Bruno Henrique da Silva Buriti */
+#bruno-henrique {
+  background-color: #FF5722;
+  color: white;
+}
+#bruno-henrique:hover {
+  background-color: #f4511e;
+}
+
+/* CAIO HENRIQUE SILVA BESSA */
+#caio {
+  background-color: #607D8B;
+  color: white;
+}
+#caio:hover {
+  background-color: #546e7a;
+}
+
+/* Caua Gabryel Silva Matos */
+#caua-gabryel {
+  background-color: #3F51B5;
+  color: white;
+}
+#caua-gabryel:hover {
+  background-color: #3949ab;
+}
+
+/* Cristian Gabriel Rosa Fernandes de Andrade */
+#cristian-gabriel {
+  background-color: #8BC34A;
+  color: white;
+}
+#cristian-gabriel:hover {
+  background-color: #7cb342;
+}
+
+/* Danilo de Freitas Fernandes */
+#danilo {
+  background-color: #CDDC39;
+  color: black;
+}
+#danilo:hover {
+  background-color: #c0ca33;
+}
+
+/* Davi Afonso */
+#davi-afonso {
+  background-color: #FF9800;
+  color: white;
+}
+#davi-afonso:hover {
+  background-color: #fb8c00;
+}
+
+/* Davi Henrique Gomes */
+#davi-henrique {
+  background-color: #9C27B0;
+  color: white;
+}
+#davi-henrique:hover {
+  background-color: #8e24aa;
+}
+
+/* Eduardo Sousa Pacheco */
+#eduardo-sousa {
+  background-color: #3F51B5;
+  color: white;
+}
+#eduardo-sousa:hover {
+  background-color: #3949ab;
+}
+
+/* Felipe Lopes Silva */
+#felipe-lopes {
+  background-color: #009688;
+  color: white;
+}
+#felipe-lopes:hover {
+  background-color: #00897b;
+}
+
+/* Gabriel da Silva Ribeiro */
+#gabriel {
+  background-color: #FF5722;
+  color: white;
+}
+#gabriel:hover {
+  background-color: #f4511e;
+}
+
+/* Guilherme Cardoso Versiani */
+#guilherme {
+  background-color: #607D8B;
+  color: white;
+}
+#guilherme:hover {
+  background-color: #546e7a;
+}
+
+/* GYOVANNA VALENTINE NASCIMENTO FERNANDES */
+#gyovanna {
+  background-color: #FFC107;
+  color: black;
+}
+#gyovanna:hover {
+  background-color: #ffb300;
+}
+
+/* Hendryw Carlos Santos Silva */
+#hendryw {
+  background-color: #4CAF50;
+  color: white;
+}
+#hendryw:hover {
+  background-color: #45a049;
+}
+
+/* Henrique Carvalho Gomes */
+#henrique {
+  background-color: #F44336;
+  color: white;
+}
+#henrique:hover {
+  background-color: #e53935;
+}
+
+/* Ícaro Augusto Gonçalves Ferreira */
+#icaro {
+  background-color: #2196F3;
+  color: white;
+}
+#icaro:hover {
+  background-color: #1e88e5;
+}
+
+/* Igor Gabriel da Silva Freitas */
+#igor {
+  background-color: #00BCD4;
+  color: white;
+}
+#igor:hover {
+  background-color: #00acc1;
+}
+
+/* JOÃO VICTOR DA CUNHA */
+#joao-victor {
+  background-color: #9C27B0;
+  color: white;
+}
+#joao-victor:hover {
+  background-color: #8e24aa;
+}
+
+/* Joao Paulo Espirandel de Souza Mendes */
+#joao-paulo {
+  background-color: #FFC107;
+  color: black;
+}
+#joao-paulo:hover {
+  background-color: #ffb300;
+}
+
+/* Joao Pedro Teixeira Goveia */
+#joao-pedro {
+  background-color: #009688;
+  color: white;
+}
+#joao-pedro:hover {
+  background-color: #00897b;
+}
+/* Kaua Araujo Serrano */
+#kaua-araujo {
+  background-color: #4CAF50;
+  color: white;
+}
+#kaua-araujo:hover {
+  background-color: #45a049;
+}
+
+/* Kaua de Jesus Souza */
+#kaua-jesus {
+  background-color: #F44336;
+  color: white;
+}
+#kaua-jesus:hover {
+  background-color: #e53935;
+}
+
+/* Kaua Francino dos Santos Lima */
+#kaua-francino {
+  background-color: #2196F3;
+  color: white;
+}
+#kaua-francino:hover {
+  background-color: #1e88e5;
+}
+
+/* Kayque Soares Marques */
+#kayque {
+  background-color: #FFEB3B;
+  color: black;
+}
+#kayque:hover {
+  background-color: #fdd835;
+}
+
+/* Leandra Rafaela Prudencio da Silva */
+#leandra {
+  background-color: #795548;
+  color: white;
+}
+#leandra:hover {
+  background-color: #6d4c41;
+}
+
+/* Lincoln Rosa Simao */
+#lincoln {
+  background-color: #FF5722;
+  color: white;
+}
+#lincoln:hover {
+  background-color: #f4511e;
+}
+
+/* Luan Simao Fernandes */
+#luan {
+  background-color: #607D8B;
+  color: white;
+}
+#luan:hover {
+  background-color: #546e7a;
+}
+
+/* Luiz Eduardo Oliveira de Sousa */
+#luiz-eduardo {
+  background-color: #8BC34A;
+  color: white;
+}
+#luiz-eduardo:hover {
+  background-color: #7cb342;
+}
+
+/* Lwara Gabrielly Soares de Souza */
+#lwara {
+  background-color: #CDDC39;
+  color: black;
+}
+#lwara:hover {
+  background-color: #c0ca33;
+}
+
+/* Micael Inacio Noronha Oliveira */
+#micael {
+  background-color: #FF9800;
+  color: white;
+}
+#micael:hover {
+  background-color: #fb8c00;
+}
+
+/* MICHELE DE FREITAS CARDOSO */
+#michele {
+  background-color: #9C27B0;
+  color: white;
+}
+#michele:hover {
+  background-color: #8e24aa;
+}
+
+/* Miguel Jonathan Gonçalves */
+#miguel {
+  background-color: #673AB7;
+  color: white;
+}
+#miguel:hover {
+  background-color: #5e35b1;
+}
+
+/* Paulo Antonio Mendes Neto */
+#paulo-antonio {
+  background-color: #E91E63;
+  color: white;
+}
+#paulo-antonio:hover {
+  background-color: #d81b60;
+}
+
+/* Paulo Vinicius Marques Dias */
+#paulo-vinicius {
+  background-color: #009688;
+  color: white;
+}
+#paulo-vinicius:hover {
+  background-color: #00897b;
+}
+
+/* Pedro Antonio Moura Amoedo */
+#pedro-antonio {
+  background-color: #00BCD4;
+  color: white;
+}
+#pedro-antonio:hover {
+  background-color: #00acc1;
+}
+
+/* Pedro de Oliveira Abrahao */
+#pedro-abrahao {
+  background-color: #FFEB3B;
+  color: black;
+}
+#pedro-abrahao:hover {
+  background-color: #fdd835;
+}
+
+/* Pedro Henrique Azevedo dos Santos */
+#pedro-henrique {
+  background-color: #FFC107;
+  color: black;
+}
+#pedro-henrique:hover {
+  background-color: #ffb300;
+}
+
+/* Pedro Henrique Gomes de Amorim */
+#pedro-gomes {
+  background-color: #FF5722;
+  color: white;
+}
+#pedro-gomes:hover {
+  background-color: #f4511e;
+}
+
+/* Pedro Lucas Silva */
+#pedro-lucas {
+  background-color: #607D8B;
+  color: white;
+}
+#pedro-lucas:hover {
+  background-color: #546e7a;
+}
+
+/* Pietro Filiaci da Silva */
+#pietro {
+  background-color: #4CAF50;
+  color: white;
+}
+#pietro:hover {
+  background-color: #45a049;
+}
+
+/* Rian da Silva Santos */
+#rian {
+  background-color: #F44336;
+  color: white;
+}
+#rian:hover {
+  background-color: #e53935;
+}
+
+/* Sofia Tresse Pires */
+#sofia {
+  background-color: #2196F3;
+  color: white;
+}
+#sofia:hover {
+  background-color: #1e88e5;
+}
+
+/* Soraya Pereira Gomes */
+#soraya {
+  background-color: #FF9800;
+  color: white;
+}
+#soraya:hover {
+  background-color: #fb8c00;
+}
+
+/* Tatiane Rodrigues Pereira */
+#tatiane {
+  background-color: #9C27B0;
+  color: white;
+}
+#tatiane:hover {
+  background-color: #8e24aa;
+}
+
+/* Vinicius Henrique da Silva Buriti */
+#vinicius {
+  background-color: #673AB7;
+  color: white;
+}
+#vinicius:hover {
+  background-color: #5e35b1;
+}
+
+/* Yago Claudino Pedro da Silva */
+#yago {
+  background-color: #E91E63;
+  color: white;
+}
+#yago:hover {
+  background-color: #d81b60;
+}
+#lenon {
+  width: 100%; /* Ajuste conforme necessário */
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  border: 2px solid #333;
+  text-align: center;
   position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  margin-bottom: 30px;
+  transition: all .35s;
+  background-color: #eb0909;
 }
 
-.btn-play:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+#lenon span {
+  position: relative;
+  z-index: 2;
+}
+
+#lenon:after {
   position: absolute;
-  top: -2px;
-  left:-2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity .3s ease-in-out;
-  border-radius: 10px;
-}
-
-.btn-play:active {
-  color: #000
-}
-
-.btn-play:active:after {
-  background: transparent;
-}
-
-.btn-play:hover:before {
-  opacity: 1;
-}
-
-.btn-play:after {
-  z-index: -1;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #111;
-  left: 0;
+  content: "";
   top: 0;
-  border-radius: 10px;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #000000; /* Cor de fundo ao passar o mouse */
+  transition: all .35s;
 }
 
-@keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
+#lenon:hover {
+  color: #fff; /* Cor do texto ao passar o mouse */
 }
 
+#lenon:hover:after {
+  width: 100%; /* Preenche o fundo ao passar o mouse */
+}
+/* Rodapé */
 footer {
   background-color: #005caa;
   color: #fff;
   padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+/* Ajustes para responsividade */
+@media (max-width: 768px) {
+  .game-button {
+      font-size: 16px;
+      padding: 10px 20px;
+      margin: 10px;
+  }
+
+  header h1 {
+      font-size: 2em;
+  }
+
+  .container {
+      grid-template-columns: 1fr; /* Uma coluna em telas menores */
+  }
 }
