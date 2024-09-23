@@ -73,13 +73,19 @@ header {
 .btn:hover {
   background-color: #0056b3;
 }
+
 /* Adilson Gomides Junior */
 #adilson {
-  background-color: #4CAF50;
-  color: white;
+        background-color: rgb(135, 8, 173);
+        border-radius: 5px;
+        border-color: #000000;
+        cursor: pointer;
+        box-shadow: 1px 2px 8px black;
+        transition: transform 0.5s ease;
 }
 #adilson:hover {
-  background-color: #45a049;
+  background-color: rgb(255, 0, 0);
+  transform: scale(1.1);
 }
 
 /* ALI HASSAN IBRAHIM FILHO */
@@ -104,10 +110,20 @@ header {
 #ana-clara {
   background-color: #ff9800;
   color: white;
+  border: none; 
+  border-radius: 8px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 #ana-clara:hover {
   background-color: #fb8c00;
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
+
 
 /* Ana Letícia Ferreira Silvano */
 #ana-leticia {
@@ -118,23 +134,24 @@ header {
   background-color: #8e24aa;
 }
 
-/* Anna Clara Felipe da Silva */
-#anna-clara {
-  background-color: #673AB7;
-  color: white;
-}
-#anna-clara:hover {
-  background-color: #5e35b1;
-}
+
 
 /* Anna Victorya Sousa Carmo de Oliveira */
 #anna-victorya {
-  background-color: #E91E63;
+  background-color: #f77cc4;
   color: white;
+  border: none; /* Remove bordas padrão */
+  padding: 10px 20px;
+  border-radius: 5px; /* Cantos arredondados */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Muda o cursor para pointer */
+  transition: background-color 0.3s; /* Efeito de transição */
 }
+
 #anna-victorya:hover {
-  background-color: #d81b60;
+  background-color: #f34faf;
 }
+
 
 /* Anderson dos Anjos Nascimento */
 #anderson {
@@ -165,11 +182,28 @@ header {
 
 /* Bianca Martins Oliveira */
 #bianca {
-  background-color: #795548;
+  background-color: #ac0645; /* Rosa escuro para o botão */
+  border: 2px solid #ac0645;
   color: white;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ac0645, 0 0 10px #ac0645, 0 0 15px #ff1a5e; /* Efeito neon */
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
 }
+
 #bianca:hover {
-  background-color: #6d4c41;
+  background-color: #800333; /* Cor mais escura para o hover */
+  border-color: #ff1a5e; /* Cor neon para o hover */
+  box-shadow: 0 0 10px #ff1a5e, 0 0 20px #ff1a5e, 0 0 30px #ff1a5e; /* Aumenta o efeito neon */
+  transform: scale(1.05); /* Efeito de aumento */
+}
+
+/* Efeito de foco */
+#bianca:focus {
+  outline: none; /* Remove a borda padrão */
+  box-shadow: 0 0 10px #ff1a5e, 0 0 20px #ff1a5e; /* Brilho ao focar */
 }
 
 /* Bruno Henrique da Silva Buriti */
@@ -219,12 +253,59 @@ header {
 
 /* Davi Afonso */
 #davi-afonso {
-  background-color: #FF9800;
-  color: white;
+  width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
 }
-#davi-afonso:hover {
-  background-color: #fb8c00;
+#davi-afonso:before {
+  content: '';
+    background: linear-gradient(45deg, #000000, #ffe100, #fffb00, rgb(215, 200, 133), #681f2e, #002bff, rgb(5, 12, 116), #f8eeb3, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
 }
+#davi-afonso:active {
+  color: #000
+}
+#davi-afonso:active:after {
+  background: transparent;
+}
+#davi-afonso:hover:before {
+  opacity: 1;
+}
+#davi-afonso:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
 
 /* Davi Henrique Gomes */
 #davi-henrique {
@@ -255,12 +336,23 @@ header {
 
 /* Gabriel da Silva Ribeiro */
 #gabriel {
-  background-color: #FF5722;
-  color: white;
+  background: linear-gradient(to bottom, rgb(255, 0, 0) 25%, rgb(255, 255, 255) 40%, rgb(0, 0, 0) 30%);
+  border-radius: 5px;
+  border-color: #000000;
+  cursor: pointer;
+  color: gold;
+  transition: background 0.5s ease;
 }
+
 #gabriel:hover {
-  background-color: #f4511e;
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 25%, rgb(255, 255, 255) 50%, rgb(255, 0, 0) 25%);
 }
+
+#gabriel:active {
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 25%, rgb(255, 255, 255) 50%, rgb(255, 0, 0) 25%);
+}
+
+
 
 /* Guilherme Cardoso Versiani */
 #guilherme {
@@ -309,9 +401,99 @@ header {
 
 /* Igor Gabriel da Silva Freitas */
 #igor {
-  background-color: #00BCD4;
-  color: white;
-}
+  html, body {
+    height: 100%;
+  }
+  
+  .wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn game-button {
+    min-width: 300px;
+    min-height: 60px;
+    display: inline-flex;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  .btn game-button::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .btn game-button:hover, 
+  .btn game-button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  .btn game-button:hover::before, 
+  .btn game-button:focus::before {
+    opacity: 1;
+  }
+  
+  .btn game-button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  .btn game-button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+} 
 #igor:hover {
   background-color: #00acc1;
 }
@@ -327,11 +509,16 @@ header {
 
 /* Joao Paulo Espirandel de Souza Mendes */
 #joao-paulo {
-  background-color: #FFC107;
-  color: black;
+  background: linear-gradient(#5de0e6,#004aad);
+  color: white;
+    border: none;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 #joao-paulo:hover {
-  background-color: #ffb300;
+  background-color: #fff;
 }
 
 /* Joao Pedro Teixeira Goveia */
@@ -342,13 +529,65 @@ header {
 #joao-pedro:hover {
   background-color: #00897b;
 }
-/* Kaua Araujo Serrano */
-#kaua-araujo {
-  background-color: #4CAF50;
+/* Kaua Araujo Serrano e Luan Simão */
+#kaua-araujo { 
+  border: none;
+  position: relative;
+  width: 200px;
+  height: 73px;
+  padding: 0;
+  z-index: 2;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+  -webkit-mask-size: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  transform: translateY(8px)
+ }
+ #kaua-araujo:after {
+  content: '';
+  position: absolut;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0px 0 0 0 white;
+  transition: all 2s ease;
+ }
+ #kaua-araujo:hover:after {
+  box-shadow: 0px -13px 56px 12px #ffffffa6;
+ }
+ #kaua-araujo span {
+  position: absolute;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 100;
+  left: 50%;
+  top: 39%;
+  letter-spacing: 3px;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  color: black;
+  transition: all 2s ease;
+ }
+ #kaua-araujo:hover span {
   color: white;
-}
+ }
+ #kaua-araujo:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s ease;
+ }
+ #kaua-araujo:hover:before {
+  width: 100%;
+ }
 #kaua-araujo:hover {
-  background-color: #45a049;
+
 }
 
 /* Kaua de Jesus Souza */
@@ -361,12 +600,181 @@ header {
 }
 
 /* Kaua Francino dos Santos Lima */
-#kaua-francino {
-  background-color: #2196F3;
-  color: white;
+.space-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22rem;
+  overflow: hidden;
+  height: 4rem;
+  background-size: 300% 300%;
+  cursor: pointer;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+  transition: 0.5s;
+  animation: gradient_301 5s ease infinite;
+  border: double 4px transparent;
+  background-image: linear-gradient(#212121, #212121),
+    linear-gradient(
+      137.48deg,
+      #ffdb3b 10%,
+      #fe53bb 45%,
+      #8f51ea 67%,
+      #0044ff 87%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
-#kaua-francino:hover {
-  background-color: #1e88e5;
+
+.container-stars {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+}
+
+strong {
+  z-index: 2;
+  font-family: "Avalors Personal Use";
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: #ffffff;
+  text-shadow: 0 0 4px white;
+}
+
+.glow {
+  position: absolute;
+  display: flex;
+  width: 12rem;
+}
+
+.circle {
+  width: 100%;
+  height: 30px;
+  filter: blur(2rem);
+  animation: pulse_3011 4s infinite;
+  z-index: -1;
+}
+
+.circle:nth-of-type(1) {
+  background: rgba(254, 83, 186, 0.636);
+}
+
+.circle:nth-of-type(2) {
+  background: rgba(142, 81, 234, 0.704);
+}
+
+.space-button:hover .container-stars {
+  z-index: 1;
+  background-color: #212121;
+}
+
+.space-button:hover {
+  transform: scale(1.1);
+}
+
+.space-button:active {
+  border: double 4px #fe53bb;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: none;
+}
+
+.space-button:active .circle {
+  background: #fe53bb;
+}
+
+.stars {
+  position: relative;
+  background: transparent;
+  width: 200rem;
+  height: 200rem;
+}
+
+.stars::after {
+  content: "";
+  position: absolute;
+  top: -10rem;
+  left: -100rem;
+  width: 100%;
+  height: 100%;
+  animation: animStarRotate 90s linear infinite;
+}
+
+.stars::after {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+}
+
+.stars::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 170%;
+  height: 500%;
+  animation: animStar 60s linear infinite;
+}
+
+.stars::before {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+  opacity: 0.5;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-135rem);
+  }
+}
+
+@keyframes animStarRotate {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes gradient_301 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse_3011 {
+  0% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
 }
 
 /* Kayque Soares Marques */
@@ -380,8 +788,13 @@ header {
 
 /* Leandra Rafaela Prudencio da Silva */
 #leandra {
-  background-color: #795548;
+  background:linear-gradient(#ffa9f9,#fff7ad);
   color: white;
+  border:none;
+  padding: 15px 32px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 #leandra:hover {
   background-color: #6d4c41;
@@ -398,21 +811,62 @@ header {
 
 /* Luan Simao Fernandes */
 #luan {
-  background-color: #607D8B;
-  color: white;
+  width: 9em;
+ height: 3em;
+ border-radius: 30em;
+ font-size: 15px;
+ font-family: inherit;
+ border: none;
+ position: relative;
+ overflow: hidden;
+ z-index: 1;
+ box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
 }
-#luan:hover {
-  background-color: #546e7a;
-}
+#luan::before {
+  content: '';
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ #luan:hover::before {
+  width: 9em;
+ }
 
 /* Luiz Eduardo Oliveira de Sousa */
 #luiz-eduardo {
-  background-color: #8BC34A;
-  color: white;
+    background-color: #ff0000; 
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); 
+    transition: all 0.3s ease-in-out;
 }
+
 #luiz-eduardo:hover {
-  background-color: #7cb342;
+    background-color: #ff4d4d; 
+    box-shadow: 0 0 20px rgba(255, 0, 0, 1); 
+    transform: scale(1.1); 
 }
+
+#luiz-eduardo:active {
+    background-color: #cc0000; 
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8); 
+    transform: scale(1); 
+}
+
 
 /* Lwara Gabrielly Soares de Souza */
 #lwara {
@@ -461,29 +915,64 @@ header {
 
 /* Paulo Vinicius Marques Dias */
 #paulo-vinicius {
-  background-color: #009688;
-  color: white;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }
 #paulo-vinicius:hover {
-  background-color: #00897b;
-}
-
-/* Pedro Antonio Moura Amoedo */
-#pedro-antonio {
-  background-color: #00BCD4;
-  color: white;
-}
-#pedro-antonio:hover {
-  background-color: #00acc1;
+  background-color: #a1a1a1;
 }
 
 /* Pedro de Oliveira Abrahao */
-#pedro-abrahao {
-  background-color: #FFEB3B;
-  color: black;
+#pedro-abrahao-pedro-antonio {
+  width: 220px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background: #1b76b3;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
 }
-#pedro-abrahao:hover {
-  background-color: #fdd835;
+
+#pedro-abrahao-pedro-antonio:before {
+  content: '';
+  background: linear-gradient(45deg, #8ed2ff, rgb(116, 204, 255), rgb(87, 208, 255), #2de0ff, #1df0ff, #00ccff, #028bc2, #0178af, #005b85);
+  position: absolute rgb(0, 119, 255);
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+#pedro-abrahao-pedro-antonio:active {
+  color: #53b4f5
+}
+
+#pedro-abrahao-pedro-antonio:active:after {
+  background: blue;
+}
+
+#pedro-abrahao-pedro-antonio:hover:before {
+  opacity: 1;
+}
+
+#pedro-abrahao-pedro-antonio:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #71d1f7;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 /* Pedro Henrique Azevedo dos Santos */
@@ -533,29 +1022,85 @@ header {
 
 /* Sofia Tresse Pires */
 #sofia {
-  background-color: #2196F3;
-  color: white;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #000000;
+  background-image: linear-gradient(135deg, rgba(0, 0, 255, 0.8), rgba(255, 255, 255, 0.8), rgba(255, 0, 0, 0.8));
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;}
+
+#sofia:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
 }
-#sofia:hover {
-  background-color: #1e88e5;
+
+#sofia:active {
+  color: #000;
 }
+
+#sofia:active:after {
+  background: transparent;
+}
+
+#sofia:hover:before {
+  opacity: 1;
+}
+
+#sofia:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(135deg, rgba(0, 0, 255, 0.8), rgba(255, 255, 255, 0.8), rgba(255, 0, 0, 0.8));
+  left: 0;
+  top: 0;
+  border-radius: 10px;}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
 
 /* Soraya Pereira Gomes */
 #soraya {
-  background-color: #FF9800;
+  transition: all 0.3s ease-in-out;
+  font-family: "Dosis", sans-serif;
+
+  width: 150px;
+  height: 60px;
+  border-radius: 50px;
+  background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+  box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 24px;
   color: white;
 }
 #soraya:hover {
-  background-color: #fb8c00;
+  transform: translateY(3px);
+  box-shadow: none;
 }
 
-/* Tatiane Rodrigues Pereira */
-#tatiane {
-  background-color: #9C27B0;
-  color: white;
-}
-#tatiane:hover {
-  background-color: #8e24aa;
+#soraya:active {
+  opacity: 0.5;
 }
 
 /* Vinicius Henrique da Silva Buriti */
@@ -569,12 +1114,33 @@ header {
 
 /* Yago Claudino Pedro da Silva */
 #yago {
-  background-color: #E91E63;
-  color: white;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: colorChange 3s infinite;
 }
 #yago:hover {
-  background-color: #d81b60;
+    opacity: 0.8;
 }
+
+@keyframes colorChange {
+  0% {
+    background-color: rgb(132, 0, 255);
+  }
+  33% {
+    background-color: rgb(255, 0, 0); 
+  }
+  66% {
+    background-color: rgb(4, 0, 255); 
+  }
+  100% {
+    background-color: rgb(255, 123, 0);
+  }
+}
+
 #lenon {
   width: 100%; /* Ajuste conforme necessário */
   line-height: 40px;
