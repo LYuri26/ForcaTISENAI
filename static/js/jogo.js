@@ -42,7 +42,6 @@ function atualizarDisplayDoJogo() {
 }
 
 // Função para adivinhar letra
-// Função para adivinhar uma letra
 function adivinharLetra() {
   if (!jogoAtivo) return; // Impede novas tentativas se o jogo acabou
 
