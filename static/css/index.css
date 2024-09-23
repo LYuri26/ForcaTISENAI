@@ -335,11 +335,14 @@ header {
 }
 
 /* Gabriel da Silva Ribeiro */
+/* Gabriel da Silva Ribeiro */
 #gabriel {
   background: linear-gradient(to bottom, 
-              rgba(0, 0, 0, 1) 25%,   /* Preto reduzido */
-              rgba(255, 255, 255, 1) 60%, /* Branco aumentado */
-              rgba(255, 0, 0, 1) 15%);  /* Vermelho reduzido */
+              rgba(0, 0, 0, 1) 20%,    /* Preto */
+              rgba(255, 255, 255, 0.9) 40%, /* Branco (superior) */
+              rgba(255, 255, 255, 1) 60%, /* Branco (central) */
+              rgba(255, 0, 0, 0.8) 80%,  /* Vermelho com opacidade */
+              rgba(255, 0, 0, 1) 100%);  /* Vermelho */
   border-radius: 5px;
   border: 2px solid #000000;
   cursor: pointer;
@@ -349,16 +352,20 @@ header {
 
 #gabriel:hover {
   background: linear-gradient(to bottom, 
-              rgba(0, 0, 0, 1) 20%,   /* Preto reduzido */
-              rgba(255, 255, 255, 1) 70%, /* Branco aumentado */
-              rgba(255, 0, 0, 1) 10%);  /* Vermelho reduzido */
+              rgba(0, 0, 0, 1) 20%,    /* Preto */
+              rgba(255, 255, 255, 0.9) 40%, /* Branco (superior) */
+              rgba(255, 255, 255, 1) 60%, /* Branco (central) */
+              rgba(255, 0, 0, 0.8) 80%,  /* Vermelho com opacidade */
+              rgba(255, 0, 0, 1) 100%);  /* Vermelho */
 }
 
 #gabriel:active {
   background: linear-gradient(to bottom, 
-              rgba(0, 0, 0, 1) 20%,   /* Preto reduzido */
-              rgba(255, 255, 255, 1) 70%, /* Branco aumentado */
-              rgba(255, 0, 0, 1) 10%);  /* Vermelho reduzido */
+              rgba(0, 0, 0, 1) 20%,    /* Preto */
+              rgba(255, 255, 255, 0.9) 40%, /* Branco (superior) */
+              rgba(255, 255, 255, 1) 60%, /* Branco (central) */
+              rgba(255, 0, 0, 0.8) 80%,  /* Vermelho com opacidade */
+              rgba(255, 0, 0, 1) 100%);  /* Vermelho */
 }
 
 
