@@ -1,6 +1,6 @@
 body {
   font-family: 'Arial', sans-serif; /* Fonte moderna */
-  background-color: #fafafa; /* Fundo suave */
+  background-color: #f0f0f0; /* Fundo suave */
   color: #333; /* Cor padrão do texto */
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ img.senai-logo {
 
 header {
   background-color: #005caa;
-  color: #fff;
+  color: #ffffff;
   padding: 0;
   margin-bottom: 20px;
 }
@@ -76,17 +76,322 @@ header {
 
 /* Adilson Gomides Junior */
 #adilson {
-        background-color: rgb(135, 8, 173);
-        border-radius: 5px;
-        border-color: #000000;
-        cursor: pointer;
-        box-shadow: 1px 2px 8px black;
-        transition: transform 0.5s ease;
+  background-color: rgb(135, 8, 173);
+  border-radius: 8px;
+  border: solid 1px rgb(255, 255, 255);
+  cursor: pointer;
+  box-shadow: 2px 2px 8px black;
+  transition: transform 0.5s ease;
+  color: rgb(255, 251, 0);
+  text-shadow: rgb(255, 255, 255) 0.1em 0.1em 0.2em;
+  font-size: 25px;
 }
 #adilson:hover {
-  background-color: rgb(255, 0, 0);
-  transform: scale(1.1);
+background-color: rgb(197, 24, 24);
+transform: scale(1.05);
 }
+
+/*Felipe Lopes e Pietro*/
+
+.felipepow {
+  background: linear-gradient(-30deg, #0b1b3d 50%, #08142b 50%);
+  padding: 20px 40px;
+  margin: 12px;
+  display: inline-block;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  overflow: hidden;
+  color: #d4e0f7;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.felipepow::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #8592ad;
+  opacity: 0;
+  -webkit-transition: .2s opacity ease-in-out;
+  transition: .2s opacity ease-in-out;
+}
+
+.felipepow:hover::before {
+  opacity: 0.2;
+}
+
+.felipepow span {
+  position: absolute;
+}
+
+.felipepow span:nth-child(1) {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(8, 20, 43, 0)), to(#2662d9));
+  background: linear-gradient(to left, rgba(8, 20, 43, 0), #2662d9);
+  -webkit-animation: 2s animateTop linear infinite;
+          animation: 2s animateTop linear infinite;
+}
+
+@-webkit-keyframes animateTop {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes animateTop {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.felipepow span:nth-child(2) {
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 2px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(8, 20, 43, 0)), to(#2662d9));
+  background: linear-gradient(to top, rgba(8, 20, 43, 0), #2662d9);
+  -webkit-animation: 2s animateRight linear -1s infinite;
+          animation: 2s animateRight linear -1s infinite;
+}
+
+@-webkit-keyframes animateRight {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes animateRight {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+.felipepow span:nth-child(3) {
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(8, 20, 43, 0)), to(#2662d9));
+  background: linear-gradient(to right, rgba(8, 20, 43, 0), #2662d9);
+  -webkit-animation: 2s animateBottom linear infinite;
+          animation: 2s animateBottom linear infinite;
+}
+
+@-webkit-keyframes animateBottom {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes animateBottom {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+.felipepow span:nth-child(4) {
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 2px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 20, 43, 0)), to(#2662d9));
+  background: linear-gradient(to bottom, rgba(8, 20, 43, 0), #2662d9);
+  -webkit-animation: 2s animateLeft linear -1s infinite;
+          animation: 2s animateLeft linear -1s infinite;
+}
+
+@-webkit-keyframes animateLeft {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes animateLeft {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+.felipepow {
+  background: linear-gradient(-30deg, #3d0b0b 50%, #2b0808 50%);
+  padding: 20px 40px;
+  margin: 12px;
+  display: inline-block;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  overflow: hidden;
+  color: #f7d4d4;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.felipepow::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #ad8585;
+  opacity: 0;
+  -webkit-transition: .2s opacity ease-in-out;
+  transition: .2s opacity ease-in-out;
+}
+
+.felipepow:hover::before {
+  opacity: 0.2;
+}
+
+.felipepow span {
+  position: absolute;
+}
+
+.felipepow span:nth-child(1) {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(43, 8, 8, 0)), to(#d92626));
+  background: linear-gradient(to left, rgba(43, 8, 8, 0), #d92626);
+  -webkit-animation: 2s animateTop linear infinite;
+          animation: 2s animateTop linear infinite;
+}
+
+@keyframes animateTop {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.felipepow span:nth-child(2) {
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 2px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(43, 8, 8, 0)), to(#d92626));
+  background: linear-gradient(to top, rgba(43, 8, 8, 0), #d92626);
+  -webkit-animation: 2s animateRight linear -1s infinite;
+          animation: 2s animateRight linear -1s infinite;
+}
+
+@keyframes animateRight {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+.felipepow span:nth-child(3) {
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(43, 8, 8, 0)), to(#d92626));
+  background: linear-gradient(to right, rgba(43, 8, 8, 0), #d92626);
+  -webkit-animation: 2s animateBottom linear infinite;
+          animation: 2s animateBottom linear infinite;
+}
+
+@keyframes animateBottom {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+.felipepow span:nth-child(4) {
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 2px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 8, 8, 0)), to(#d92626));
+  background: linear-gradient(to bottom, rgba(43, 8, 8, 0), #d92626);
+  -webkit-animation: 2s animateLeft linear -1s infinite;
+          animation: 2s animateLeft linear -1s infinite;
+}
+
+@keyframes animateLeft {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+/*fim do felipe e pietro*/
+
 
 /* ALI HASSAN IBRAHIM FILHO */
 #ali-hassan {
@@ -110,19 +415,80 @@ header {
 #ana-clara {
   background-color: #ff9800;
   color: white;
-  border: none; 
-  border-radius: 8px; 
-  padding: 10px 20px; 
-  font-size: 16px; 
-  cursor: pointer; 
-  transition: background-color 0.3s, transform 0.3s;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  outline: none;
+  font-weight: bold;
+  position: relative; /* Necessário para os efeitos com pseudo-elementos */
+  overflow: hidden; /* Evita que os corações saiam do botão */
 }
+
 #ana-clara:hover {
   background-color: #fb8c00;
-  transform: translateY(-2px); 
+  transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
+
+#ana-clara:active {
+  background-color: #f57c00;
+  transform: translateY(0); 
+}
+
+/* Efeito glitter */
+#ana-clara::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.6), rgba(255,255,255,0) 60%);
+  animation: glitter 1.5s infinite;
+}
+
+@keyframes glitter {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Corações flutuando ao clicar */
+#ana-clara::after {
+  content: '❤️';
+  position: absolute;
+  font-size: 18px;
+  animation: floating-hearts 1s ease-out forwards;
+  opacity: 0;
+}
+
+#ana-clara:active::after {
+  opacity: 1;
+  animation: floating-hearts 1s ease-out forwards;
+}
+
+@keyframes floating-hearts {
+  0% {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%) scale(1.5);
+    opacity: 0;
+  }
+}
+
 
 
 /* Ana Letícia Ferreira Silvano */
@@ -136,20 +502,59 @@ header {
 
 
 
-/* Anna Victorya Sousa Carmo de Oliveira */
+/* Anna Victórya e Anna Felipe */
 #anna-victorya {
-  background-color: #f77cc4;
-  color: white;
+  background-color: #d81b60; /* Cor de fundo rosa */
+  color: white; /* Cor do texto */
   border: none; /* Remove bordas padrão */
   padding: 10px 20px;
-  border-radius: 5px; /* Cantos arredondados */
+  border-radius: 10px; /* Cantos arredondados */
   font-size: 16px; /* Tamanho da fonte */
   cursor: pointer; /* Muda o cursor para pointer */
-  transition: background-color 0.3s; /* Efeito de transição */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Efeito de transição */
+  position: relative; /* Para posicionar a pseudo-elemento */
 }
 
+/* Efeito de luz nas bordas */
+#anna-victorya::before {
+  content: '';
+  position: absolute;
+  top: -4px; 
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  background: rgba(255, 255, 255, 0.2); /* Luz suave */
+  border-radius: 12px; /* Cantos arredondados */
+  box-shadow: 0 0 10px rgb(255, 0, 128), 0 0 20px rgba(255, 105, 180, 0.5); /* Luz rosa */
+  opacity: 0; /* Começa invisível */
+  transition: opacity 0.3s; /* Efeito de transição */
+}
+
+/* Efeito ao passar o mouse */
 #anna-victorya:hover {
-  background-color: #f34faf;
+  background-color: #ff00bf; /* Cor mais escura ao passar o mouse */
+}
+
+/* Mostrar o efeito de luz nas bordas ao passar o mouse */
+#anna-victorya:hover::before {
+  opacity: 1; /* Torna o efeito visível */
+}
+
+/* Estilo das coração */
+#anna-victorya::after {
+  content: '♡'; /* coração */
+  position: absolute;
+  top: 10px; /* Posição da coração */
+  right: 10px; /* Posição da coração */
+  color: rgb(0, 0, 0); /* Cor da coração */
+  font-size: 20px; /* Tamanho da coração */
+  opacity: 0; /* Começa invisível */
+  transition: opacity 0.3s; /* Efeito de transição */
+}
+
+/* Mostrar a estrela ao passar o mouse */
+#anna-victorya:hover::after {
+  opacity: 1; /* Torna a estrela visível */
 }
 
 
@@ -181,30 +586,34 @@ header {
 }
 
 /* Bianca Martins Oliveira */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 #bianca {
-  background-color: #ac0645; /* Rosa escuro para o botão */
-  border: 2px solid #ac0645;
-  color: white;
+  background-color: #b2e4d7; /* Verde bebê */
+  border: 2px solid #ac0645; /* Borda rosa escuro */
+  color: #ac0645; /* Texto em rosa escuro */
   padding: 10px 20px;
   font-size: 1.1rem;
   border-radius: 5px;
-  box-shadow: 0 0 5px #ac0645, 0 0 10px #ac0645, 0 0 15px #ff1a5e; /* Efeito neon */
+  box-shadow: 0 0 10px rgba(172, 6, 69, 0.8), 0 0 20px rgba(172, 6, 69, 0.5); /* Efeito neon mais forte */
   transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
   cursor: pointer;
 }
 
 #bianca:hover {
-  background-color: #800333; /* Cor mais escura para o hover */
-  border-color: #ff1a5e; /* Cor neon para o hover */
-  box-shadow: 0 0 10px #ff1a5e, 0 0 20px #ff1a5e, 0 0 30px #ff1a5e; /* Aumenta o efeito neon */
-  transform: scale(1.05); /* Efeito de aumento */
+  background-color: #99d5c5; /* Verde bebê um pouco mais escuro */
+  border-color: #ac0645; /* Mantém a borda rosa escuro no hover */
+  box-shadow: 0 0 15px rgba(172, 6, 69, 1), 0 0 30px rgba(172, 6, 69, 0.6); /* Efeito neon mais forte no hover */
+  transform: scale(1.05); /* Efeito de aumento sutil */
 }
 
 /* Efeito de foco */
 #bianca:focus {
   outline: none; /* Remove a borda padrão */
-  box-shadow: 0 0 10px #ff1a5e, 0 0 20px #ff1a5e; /* Brilho ao focar */
+  box-shadow: 0 0 15px rgba(172, 6, 69, 1); /* Brilho ao focar com rosa escuro */
 }
+
+
 
 /* Bruno Henrique da Silva Buriti */
 #bruno-henrique {
@@ -266,7 +675,7 @@ header {
 }
 #davi-afonso:before {
   content: '';
-    background: linear-gradient(45deg, #000000, #ffe100, #fffb00, rgb(215, 200, 133), #681f2e, #002bff, rgb(5, 12, 116), #f8eeb3, #ff0000);
+    background: linear-gradient(45deg, #b4ae80, #f1d69d, rgb(215, 200, 133), #f8eeb3, #ff0000, rgb(195, 30, 24), #7b1010, #681f2e);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -335,23 +744,24 @@ header {
 }
 
 /* Gabriel da Silva Ribeiro */
-/* Gabriel da Silva Ribeiro */
 #gabriel {
   background: linear-gradient(to bottom, 
-              rgba(0, 0, 0, 1) 20%,    /* Preto */
-              rgba(255, 255, 255, 0.9) 40%, /* Branco (superior) */
-              rgba(255, 255, 255, 1) 60%, /* Branco (central) */
-              rgba(255, 0, 0, 0.8) 80%,  /* Vermelho com opacidade */
-              rgba(255, 0, 0, 1) 100%);  /* Vermelho */
+  rgba(255, 0, 0, 1) 20%,
+  rgba(255, 0, 0, 0.8) 40%,
+  rgba(255, 255, 255, 1) 60%, 
+  rgba(104, 86, 86, 0.9) 80%,
+  rgba(0, 0, 0, 1) 100%);
   border-radius: 5px;
-  border: 2px solid #000000;
+  border: 2px solid yellow;
   cursor: pointer;
-  color: gold;
+  color: rgb(255, 238, 0);
+  font-size: 20px;
+  -webkit-text-stroke: 1px rgb(255, 208, 0);
   transition: background 0.5s ease;
 }
 
 #gabriel:hover {
-  background: linear-gradient(to bottom, 
+  background: linear-gradient(to bottom,
               rgba(0, 0, 0, 1) 20%,    /* Preto */
               rgba(255, 255, 255, 0.9) 40%, /* Branco (superior) */
               rgba(255, 255, 255, 1) 60%, /* Branco (central) */
@@ -367,7 +777,6 @@ header {
               rgba(255, 0, 0, 0.8) 80%,  /* Vermelho com opacidade */
               rgba(255, 0, 0, 1) 100%);  /* Vermelho */
 }
-
 
 
 /* Guilherme Cardoso Versiani */
@@ -408,106 +817,127 @@ header {
 
 /* Ícaro Augusto Gonçalves Ferreira */
 #icaro {
-  background-color: #2196F3;
-  color: white;
+  #icaro {
+      width: 220px;
+      height: 50px;
+      border: none;
+      outline: none;
+      color: black;
+      background: #F44336; 
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+      border-radius: 10px;
+      transition: background-color .3s ease-in-out; 
+  }
+  
+  #icaro:before {
+      content: '';
+      background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing 20s linear infinite;
+      opacity: 0;
+      transition: opacity .3s ease-in-out;
+      border-radius: 10px;
+  }
+  
+  #icaro:hover:before {
+      opacity: 1; 
+  }
+  #icaro:active {
+      color: #000; 
+  }
+  
+  #icaro:after {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #F44336; 
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+  }
+  
+  @keyframes glowing {
+      0% { background-position: 0 0; }
+      50% { background-position: 400% 0; }
+      100% { background-position: 0 0; }
+  }
 }
 #icaro:hover {
-  background-color: #1e88e5;
+  background-color: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
 }
 
 /* Igor Gabriel da Silva Freitas */
 #igor {
-  html, body {
-    height: 100%;
+  .wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
-  .wrap {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .btn game-button {
-    min-width: 300px;
-    min-height: 60px;
-    display: inline-flex;
-    font-family: 'Nunito', sans-serif;
-    font-size: 22px;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 1.3px;
-    font-weight: 700;
-    color: #313133;
-    background: #4FD1C5;
-  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
-    border: none;
-    border-radius: 1000px;
-    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
-    transition: all 0.3s ease-in-out 0s;
-    cursor: pointer;
-    outline: none;
+  .link_wrapper{
     position: relative;
-    padding: 10px;
-    }
+  }
   
-  .btn game-button::before {
-  content: '';
-    border-radius: 1000px;
-    min-width: calc(300px + 12px);
-    min-height: calc(60px + 12px);
-    border: 6px solid #00FFCB;
-    box-shadow: 0 0 60px rgba(0,255,203,.64);
+  a{
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+  }
+  
+  .icon{
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: all .3s ease-in-out 0s;
-  }
-  
-  .btn game-button:hover, 
-  .btn game-button:focus {
-    color: #313133;
-    transform: translateY(-6px);
-  }
-  
-  .btn game-button:hover::before, 
-  .btn game-button:focus::before {
-    opacity: 1;
-  }
-  
-  .btn game-button::after {
-    content: '';
-    width: 30px; height: 30px;
-    border-radius: 100%;
-    border: 6px solid #00FFCB;
-    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
     z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: ring 1.5s infinite;
+    transition: all .35s;
   }
   
-  .btn game-button:focus::after {
-    animation: none;
-    display: none;
+  .icon svg{
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: #2ecc71;
+    transition: all .35s;
   }
   
-  @keyframes ring {
-    0% {
-      width: 30px;
-      height: 30px;
-      opacity: 1;
-    }
-    100% {
-      width: 300px;
-      height: 300px;
-      opacity: 0;
-    }
+  a:hover{
+    width: 200px;
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: #2ecc71;
+  }
+  
+  a:hover + .icon{
+    border: 3px solid #2ecc71;
+    right: -25%;
   }
 } 
 #igor:hover {
@@ -550,7 +980,7 @@ header {
   border: none;
   position: relative;
   width: 200px;
-  height: 73px;
+  height: 103px;
   padding: 0;
   z-index: 2;
   -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
@@ -602,11 +1032,8 @@ header {
  #kaua-araujo:hover:before {
   width: 100%;
  }
-#kaua-araujo:hover {
 
-}
-
-/* Kaua de Jesus Souza */
+ /* Kaua de Jesus Souza */
 #kaua-jesus {
   background-color: #F44336;
   color: white;
@@ -619,8 +1046,8 @@ header {
 .space-button {
   display: flex;
   justify-content: center;
+  width: 100%;
   align-items: center;
-  width: 22rem;
   overflow: hidden;
   height: 4rem;
   background-size: 300% 300%;
@@ -653,13 +1080,14 @@ header {
   border-radius: 5rem;
 }
 
-strong {
+.letras {
   z-index: 2;
   font-family: "Avalors Personal Use";
   font-size: 12px;
   letter-spacing: 5px;
   color: #ffffff;
   text-shadow: 0 0 4px white;
+  font-weight: bold; /* Negrito */
 }
 
 .glow {
@@ -805,7 +1233,7 @@ strong {
 /* Leandra Rafaela Prudencio da Silva */
 #leandra {
   background:linear-gradient(#ffa9f9,#fff7ad);
-  color: white;
+  color:#333;
   border:none;
   padding: 15px 32px;
   font-size: 16px;
@@ -931,73 +1359,184 @@ strong {
 
 /* Paulo Vinicius Marques Dias */
 #paulo-vinicius {
-  background-color: #000000;
-  color: rgb(255, 255, 255);
-}
-#paulo-vinicius:hover {
-  background-color: #a1a1a1;
-}
-
-/* Pedro de Oliveira Abrahao */
-#pedro-abrahao-pedro-antonio {
   width: 220px;
+    height: 50px;
     border: none;
     outline: none;
-    color: #ffffff;
-    background: #1b76b3;
+    color: #fff;
+    background: #111;
     cursor: pointer;
     position: relative;
     z-index: 0;
     border-radius: 10px;
 }
-
-#pedro-abrahao-pedro-antonio:before {
+#paulo-vinicius:before {
   content: '';
-  background: linear-gradient(45deg, #8ed2ff, rgb(116, 204, 255), rgb(87, 208, 255), #2de0ff, #1df0ff, #00ccff, #028bc2, #0178af, #005b85);
-  position: absolute rgb(0, 119, 255);
-  top: -2px;
-  left:-2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity .3s ease-in-out;
-  border-radius: 10px;
+    background: linear-gradient(45deg, #0e0e0e, #292929, rgb(94, 94, 94), #808080, rgb(158, 158, 158), rgb(172, 172, 172), #cecece, #ffffff);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
 }
-#pedro-abrahao-pedro-antonio:active {
-  color: #53b4f5
+#paulo-vinicius:active {
+  color: #000
 }
-
-#pedro-abrahao-pedro-antonio:active:after {
-  background: blue;
+#paulo-vinicius:active:after {
+  background: transparent;
 }
-
-#pedro-abrahao-pedro-antonio:hover:before {
+#paulo-vinicius:hover:before {
   opacity: 1;
 }
-
-#pedro-abrahao-pedro-antonio:after {
+#paulo-vinicius:after {
   z-index: -1;
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #71d1f7;
+  background: #111;
   left: 0;
   top: 0;
   border-radius: 10px;
 }
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+/* Pedro de Oliveira Abrahao */
+#pedro-abrahao-pedro-antonio {
+  background-color: rgb(0, 0, 139); /* Azul Escuro */
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: colorChange 5s infinite;
+}
+#pedro-abrahao-pedro-antonio:hover {
+    opacity: 0.8;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: rgb(0, 0, 255); /* Azul */
+  }
+  33% {
+    background-color: rgb(0, 191, 255); /* Azul Céu */
+  }
+  66% {
+    background-color: rgb(135, 206, 250); /* Azul Claro */
+  }
+  100% {
+    background-color: rgb(173, 216, 230); /* Azul Pastel */
+  }
+}
+
 
 /* Pedro Henrique Azevedo dos Santos */
-#pedro-henrique {
-  background-color: #FFC107;
-  color: black;
+
+.pedrohtml {
+  height: 90%;
+  margin: 0;
+  padding: 0;
 }
-#pedro-henrique:hover {
-  background-color: #ffb300;
+.wrap {
+  height: 100%;
+  display:block;
+  align-items: center;
+  justify-content: flex-end; 
+  padding-right: 20px; 
+}
+
+#pedro-henrique {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4FD1C5;
+background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+#pedro-henrique::before {
+  content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+#pedro-henrique:hover, 
+#pedro-henrique:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+#pedro-henrique:hover::before, 
+#pedro-henrique:focus::before {
+  opacity: 1;
+}
+
+#pedro-henrique::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+#pedro-henrique:hover::after, 
+#pedro-henrique:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
 }
 
 /* Pedro Henrique Gomes de Amorim */
@@ -1011,21 +1550,26 @@ strong {
 
 /* Pedro Lucas Silva */
 #pedro-lucas {
-  background-color: #607D8B;
-  color: white;
-}
-#pedro-lucas:hover {
-  background-color: #546e7a;
+  padding: 15px 30px; /* Espaçamento interno */
+  color: #007bff; /* Texto azul */
+  text-align: center; /* Centraliza o texto */
+  text-decoration: none; /* Remove sublinhado */
+  background-color: #000; /* Fundo preto */
+  border-radius: 30px; /* Bordas bem arredondadas */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  font-size: 18px; /* Tamanho da fonte */
+  font-family: 'Arial', sans-serif; /* Fonte legível */
+  position: relative; /* Para permitir efeitos internos */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Suaviza transições */
 }
 
-/* Pietro Filiaci da Silva */
-#pietro {
-  background-color: #4CAF50;
-  color: white;
+#pedro-lucas:hover {
+  background-color: #333; /* Fundo mais claro ao passar o mouse */
+  color: #00aaff; /* Azul mais claro no texto ao passar o mouse */
 }
-#pietro:hover {
-  background-color: #45a049;
-}
+
+
+
 
 /* Rian da Silva Santos */
 #rian {
@@ -1038,17 +1582,25 @@ strong {
 
 /* Sofia Tresse Pires */
 #sofia {
-  width: 100%;
+  font-family: 'Abril Fatface', serif;
+  font-size: 19px;
+  text-align: center;
+  color: #35165e;
+  width: 150%;
   border: none;
   outline: none;
-  color: #000000;
-  background-image: linear-gradient(135deg, rgba(0, 0, 255, 0.8), rgba(255, 255, 255, 0.8), rgba(255, 0, 0, 0.8));
+  background-image: linear-gradient(120deg, rgba(0, 0, 255, 0.8), rgba(255, 255, 255, 0.8), rgba(255, 0, 0, 0.8));
   cursor: pointer;
   position: relative;
   z-index: 0;
-  border-radius: 10px;}
+  border-radius: 10px;
+  font-weight: bold;
+  
+}
 
 #sofia:before {
+  font-family: 'Abril Fatface', serif;
+  text-align: center;
   content: '';
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);  position: absolute;
   top: -2px;
@@ -1065,18 +1617,24 @@ strong {
 }
 
 #sofia:active {
+  font-family: 'Abril Fatface', serif;
+  text-align: center;
   color: #000;
 }
 
 #sofia:active:after {
+  font-family: 'Abril Fatface', serif;
+  text-align: center;
   background: transparent;
 }
 
 #sofia:hover:before {
+  font-family: 'Abril Fatface', serif;
   opacity: 1;
 }
 
 #sofia:after {
+ 
   z-index: -1;
   content: '';
   position: absolute;
@@ -1085,7 +1643,10 @@ strong {
   background-image: linear-gradient(135deg, rgba(0, 0, 255, 0.8), rgba(255, 255, 255, 0.8), rgba(255, 0, 0, 0.8));
   left: 0;
   top: 0;
-  border-radius: 10px;}
+  color: #000;
+  border-radius: 10px;
+  font-weight: bold;
+}
 
 @keyframes glowing {
   0% { background-position: 0 0; }
