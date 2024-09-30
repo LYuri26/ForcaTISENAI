@@ -569,12 +569,23 @@ transform: scale(1.05);
 
 /* Antonio Kayllan de Sousa e Sousa */
 #antonio-kayllan {
-  background-color: #00BCD4;
-  color: white;
+  background: rgb(173, 216, 230); /* Azul claro */
+  background: linear-gradient(0deg, rgba(173, 216, 230, 1) 0%, rgba(135, 206, 250, 1) 100%); /* Gradiente */
+  border: none;
 }
+
+#antonio-kayllan:before {
+  height: 0%;
+  width: 2px;
+}
+
 #antonio-kayllan:hover {
-  background-color: #00acc1;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+              inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+              inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
 }
+
 
 /* Arthur Neves Liazar */
 #arthur-neves {
@@ -586,24 +597,24 @@ transform: scale(1.05);
 }
 
 /* Bianca Martins Oliveira */
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
 #bianca {
   background-color: #b2e4d7; /* Verde bebê */
   border: 2px solid #ac0645; /* Borda rosa escuro */
   color: #ac0645; /* Texto em rosa escuro */
   padding: 10px 20px;
   font-size: 1.1rem;
+  font-family: 'Brush Script MT', 'Brush Script Std', cursive; /* Escolha uma fonte aqui */
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(172, 6, 69, 0.8), 0 0 20px rgba(172, 6, 69, 0.5); /* Efeito neon mais forte */
   transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
   cursor: pointer;
 }
 
+
 #bianca:hover {
-  background-color: #99d5c5; /* Verde bebê um pouco mais escuro */
+  background-color: #95d6c5; /* Verde bebê um pouco mais escuro */
   border-color: #ac0645; /* Mantém a borda rosa escuro no hover */
-  box-shadow: 0 0 15px rgba(172, 6, 69, 1), 0 0 30px rgba(172, 6, 69, 0.6); /* Efeito neon mais forte no hover */
+  box-shadow: 0 0 15px rgba(172, 6, 69, 1), 0 0 30px rgba(172, 6, 69, 0.9); /* Efeito neon mais forte no hover */
   transform: scale(1.05); /* Efeito de aumento sutil */
 }
 
@@ -613,27 +624,42 @@ transform: scale(1.05);
   box-shadow: 0 0 15px rgba(172, 6, 69, 1); /* Brilho ao focar com rosa escuro */
 }
 
-
-
 /* Bruno Henrique da Silva Buriti */
-#bruno-henrique {
-  background-color: #FF5722;
-  color: white;
-}
-#bruno-henrique:hover {
-  background-color: #f4511e;
-}
-
-/* CAIO HENRIQUE SILVA BESSA */
-#caio {
-  background-color: #607D8B;
-  color: white;
-}
-#caio:hover {
-  background-color: #546e7a;
+#bruno-henrique 
+.wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/* Caua Gabryel Silva Matos */
+.link_wrapper{
+  position: relative;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.icon svg{  
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #2ecc71;
+  transition: all .35s;
+}
+
+  /* Caua Gabryel Silva Matos */
 #caua-gabryel {
   background-color: #3F51B5;
   color: white;
@@ -734,15 +760,6 @@ transform: scale(1.05);
   background-color: #3949ab;
 }
 
-/* Felipe Lopes Silva */
-#felipe-lopes {
-  background-color: #009688;
-  color: white;
-}
-#felipe-lopes:hover {
-  background-color: #00897b;
-}
-
 /* Gabriel da Silva Ribeiro */
 #gabriel {
   background: linear-gradient(to bottom, 
@@ -757,7 +774,7 @@ transform: scale(1.05);
   color: rgb(255, 238, 0);
   font-size: 20px;
   -webkit-text-stroke: 1px rgb(255, 208, 0);
-  transition: background 0.5s ease;
+  transition: backgroundc 0.5s ease;
 }
 
 #gabriel:hover {
@@ -819,7 +836,6 @@ transform: scale(1.05);
 #icaro {
   #icaro {
       width: 220px;
-      height: 50px;
       border: none;
       outline: none;
       color: black;
@@ -875,73 +891,6 @@ transform: scale(1.05);
 }
 #icaro:hover {
   background-color: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-}
-
-/* Igor Gabriel da Silva Freitas */
-#igor {
-  .wrapper{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .link_wrapper{
-    position: relative;
-  }
-  
-  a{
-    display: block;
-    width: 250px;
-    height: 50px;
-    line-height: 50px;
-    font-weight: bold;
-    text-decoration: none;
-    background: #333;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border: 3px solid #333;
-    transition: all .35s;
-  }
-  
-  .icon{
-    width: 50px;
-    height: 50px;
-    border: 3px solid transparent;
-    position: absolute;
-    transform: rotate(45deg);
-    right: 0;
-    top: 0;
-    z-index: -1;
-    transition: all .35s;
-  }
-  
-  .icon svg{
-    width: 30px;
-    position: absolute;
-    top: calc(50% - 15px);
-    left: calc(50% - 15px);
-    transform: rotate(-45deg);
-    fill: #2ecc71;
-    transition: all .35s;
-  }
-  
-  a:hover{
-    width: 200px;
-    border: 3px solid #2ecc71;
-    background: transparent;
-    color: #2ecc71;
-  }
-  
-  a:hover + .icon{
-    border: 3px solid #2ecc71;
-    right: -25%;
-  }
-} 
-#igor:hover {
-  background-color: #00acc1;
 }
 
 /* JOÃO VICTOR DA CUNHA */
@@ -1043,7 +992,7 @@ transform: scale(1.05);
 }
 
 /* Kaua Francino dos Santos Lima */
-.space-button {
+.space-button-kf {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -1055,7 +1004,7 @@ transform: scale(1.05);
   backdrop-filter: blur(1rem);
   border-radius: 5rem;
   transition: 0.5s;
-  animation: gradient_301 5s ease infinite;
+  animation: gradient_kf_301 5s ease infinite;
   border: double 4px transparent;
   background-image: linear-gradient(#212121, #212121),
     linear-gradient(
@@ -1069,7 +1018,7 @@ transform: scale(1.05);
   background-clip: content-box, border-box;
 }
 
-.container-stars {
+.container-stars-kf {
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -1080,7 +1029,7 @@ transform: scale(1.05);
   border-radius: 5rem;
 }
 
-.letras {
+.letras-kf {
   z-index: 2;
   font-family: "Avalors Personal Use";
   font-size: 12px;
@@ -1090,87 +1039,88 @@ transform: scale(1.05);
   font-weight: bold; /* Negrito */
 }
 
-.glow {
+.glow-kf {
   position: absolute;
   display: flex;
   width: 12rem;
 }
 
-.circle {
+.circle-kf {
   width: 100%;
   height: 30px;
   filter: blur(2rem);
-  animation: pulse_3011 4s infinite;
+  animation: pulse_kf_3011 4s infinite;
   z-index: -1;
 }
 
-.circle:nth-of-type(1) {
+.circle-kf:nth-of-type(1) {
   background: rgba(254, 83, 186, 0.636);
 }
 
-.circle:nth-of-type(2) {
+.circle-kf:nth-of-type(2) {
   background: rgba(142, 81, 234, 0.704);
 }
 
-.space-button:hover .container-stars {
+.space-button-kf:hover .container-stars-kf {
   z-index: 1;
   background-color: #212121;
 }
 
-.space-button:hover {
+.space-button-kf:hover {
   transform: scale(1.1);
 }
 
-.space-button:active {
+.space-button-kf:active {
   border: double 4px #fe53bb;
   background-origin: border-box;
   background-clip: content-box, border-box;
   animation: none;
 }
 
-.space-button:active .circle {
+.space-button-kf:active .circle-kf {
   background: #fe53bb;
 }
 
-.stars {
+.stars-kf {
   position: relative;
   background: transparent;
   width: 200rem;
   height: 200rem;
 }
 
-.stars::after {
+.stars-kf::after {
   content: "";
   position: absolute;
   top: -10rem;
   left: -100rem;
   width: 100%;
   height: 100%;
-  animation: animStarRotate 90s linear infinite;
+  animation: animStarRotate_kf 90s linear infinite;
 }
 
-.stars::after {
+.stars-kf::after {
   background-image: radial-gradient(#ffffff 1px, transparent 1%);
   background-size: 50px 50px;
 }
 
-.stars::before {
+.stars-kf::before {
   content: "";
   position: absolute;
   top: 0;
   left: -50%;
   width: 170%;
   height: 500%;
-  animation: animStar 60s linear infinite;
+  animation: animStar_kf 60s linear infinite;
 }
 
-.stars::before {
+.stars-kf::before {
   background-image: radial-gradient(#ffffff 1px, transparent 1%);
   background-size: 50px 50px;
   opacity: 0.5;
 }
 
-@keyframes animStar {
+/* Animações exclusivas */
+@keyframes animStar_kf {
   from {
     transform: translateY(0);
   }
@@ -1180,7 +1130,7 @@ transform: scale(1.05);
   }
 }
 
-@keyframes animStarRotate {
+@keyframes animStarRotate_kf {
   from {
     transform: rotate(360deg);
   }
@@ -1190,7 +1140,7 @@ transform: scale(1.05);
   }
 }
 
-@keyframes gradient_301 {
+@keyframes gradient_kf_301 {
   0% {
     background-position: 0% 50%;
   }
@@ -1204,7 +1154,7 @@ transform: scale(1.05);
   }
 }
 
-@keyframes pulse_3011 {
+@keyframes pulse_kf_3011 {
   0% {
     transform: scale(0.75);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
@@ -1242,15 +1192,6 @@ transform: scale(1.05);
 }
 #leandra:hover {
   background-color: #6d4c41;
-}
-
-/* Lincoln Rosa Simao */
-#lincoln {
-  background-color: #FF5722;
-  color: white;
-}
-#lincoln:hover {
-  background-color: #f4511e;
 }
 
 /* Luan Simao Fernandes */
@@ -1360,7 +1301,6 @@ transform: scale(1.05);
 /* Paulo Vinicius Marques Dias */
 #paulo-vinicius {
   width: 220px;
-    height: 50px;
     border: none;
     outline: none;
     color: #fff;
@@ -1400,7 +1340,6 @@ transform: scale(1.05);
   content: '';
   position: absolute;
   width: 100%;
-  height: 100%;
   background: #111;
   left: 0;
   top: 0;
@@ -1468,12 +1407,11 @@ transform: scale(1.05);
   text-align: center;
   letter-spacing: 1.3px;
   font-weight: 700;
-  color: #313133;
-  background: #4FD1C5;
-background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  color: #ffffff;
+  background: #1282df;
   border: none;
   border-radius: 1000px;
-  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  box-shadow: 12px 12px 24px rgb(122, 206, 231);
   transition: all 0.3s ease-in-out 0s;
   cursor: pointer;
   outline: none;
@@ -1486,8 +1424,8 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
   border-radius: 1000px;
   min-width: calc(300px + 12px);
   min-height: calc(60px + 12px);
-  border: 6px solid #00FFCB;
-  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  border: 6px solid #698dcf;
+  box-shadow: 0 0 60px rgba(0, 153, 255, 0.64);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1511,7 +1449,7 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
   content: '';
   width: 30px; height: 30px;
   border-radius: 100%;
-  border: 6px solid #00FFCB;
+  border: 6px solid #1100ff;
   position: absolute;
   z-index: -1;
   top: 50%;
@@ -1661,7 +1599,6 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
   font-family: "Dosis", sans-serif;
 
   width: 150px;
-  height: 60px;
   border-radius: 50px;
   background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
   box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
@@ -1678,15 +1615,6 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
 
 #soraya:active {
   opacity: 0.5;
-}
-
-/* Vinicius Henrique da Silva Buriti */
-#vinicius {
-  background-color: #673AB7;
-  color: white;
-}
-#vinicius:hover {
-  background-color: #5e35b1;
 }
 
 /* Yago Claudino Pedro da Silva */
