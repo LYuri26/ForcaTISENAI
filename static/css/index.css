@@ -18,9 +18,9 @@ header {
 }
 
 .main-content {
-  max-width: 800px; /* Limite a largura do conteúdo */
+  max-width: 1000px; /* Limite a largura do conteúdo */
   margin: 0 auto; /* Centraliza o conteúdo */
-  padding: 20px;
+  padding: 40px;
   background-color: #fff; /* Fundo branco */
   border-radius: 10px; /* Bordas arredondadas */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
@@ -63,16 +63,17 @@ header {
 .btn {
   border: none;
   padding: 15px 20px;
-  margin: 10px;
+  margin: 20px; /* Aumenta o espaçamento entre os botões */
   cursor: pointer;
   border-radius: 5px;
-  flex: 0 0 calc(50% - 20px); /* Ajusta para duas colunas */
+  flex: 0 0 calc(50% - 40px); /* Ajuste o cálculo da largura para refletir o novo margin */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
   background-color: #0056b3;
 }
+
 
 /* Adilson Gomides Junior */
 #adilson {
@@ -391,24 +392,13 @@ transform: scale(1.05);
   }
 }
 /*fim do felipe e pietro*/
-
-
-/* ALI HASSAN IBRAHIM FILHO */
-#ali-hassan {
-  background-color: #f44336;
-  color: white;
-}
-#ali-hassan:hover {
-  background-color: #e53935;
-}
-
 /* ALYSSON EDUARDO SILVA */
 #alysson {
   width: 250px;
   height: 70px;
   border: none;
   outline: none;
-  color: #ffffff;
+  color: #000000;
   background: #000000;
   cursor: pointer;
   position: relative;
@@ -418,7 +408,7 @@ transform: scale(1.05);
 
 #alysson:before {
   content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background: linear-gradient(45deg, #e100ff, #2600ff, #e100ff, #2600ff, #e100ff, #2600ff, #e100ff, #2600ff, #e100ff);
   position: absolute;
   top: -2px;
   left:-2px;
@@ -451,7 +441,7 @@ transform: scale(1.05);
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #000000;
+  background: #f6f8ff;
   left: 0;
   top: 0;
   border-radius: 10px;
@@ -657,7 +647,7 @@ transform: scale(1.05);
   transition-delay: 0.24s;
 }
 
-svg#goo-ana-leticia {
+svg#goo-ana-leticia1 {
   display: none; /* Hide SVG filter if not needed elsewhere */
 }
 
@@ -807,21 +797,6 @@ svg#goo-ana-leticia {
   fill: #2ecc71;
   transition: all .35s;
 }
-
-  /* Caua Gabryel Silva Matos */
-#caua-gabryel {
-  width: 220px;
-  height: 50px;
-  border: none;
-  outline: none;
-  color: #fff;
-  background: #111;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
-}
-
 
 /* Danilo de Freitas Fernandes */
 #danilo {
@@ -1013,15 +988,6 @@ svg#goo-ana-leticia {
   }
 }
 
-/* Eduardo Sousa Pacheco */
-#eduardo-sousa {
-  background-color: #3F51B5;
-  color: white;
-}
-#eduardo-sousa:hover {
-  background-color: #3949ab;
-}
-
 /* Gabriel da Silva Ribeiro */
 #gabriel {
   background: linear-gradient(to bottom, 
@@ -1074,7 +1040,7 @@ svg#goo-ana-leticia {
 
 #guilherme:before {
   content: '';
-  background: linear-gradient(45deg, #ff0000, #000000, #ffffff, #ff0000, #000, #fff );
+  background: linear-gradient(45deg, #ff0000, #000000, #ffffff, #ff0000, #000, #fff, #ff0000, #000000, #ffffff, #ff0000, #000000, #ffffff, #ff0000, #000000, #ffffff, #ff0000, #000000, #ffffff );
   position: absolute;
   top: -2px;
   left:-2px;
@@ -1127,15 +1093,68 @@ svg#goo-ana-leticia {
 #gyovanna:hover {
   background-color: #ffb300;
 }
-
-/* Hendryw Carlos Santos Silva */
+  
 #hendryw {
-  background-color: #4CAF50;
-  color: white;
+  position: relative;
+  border: none;
+  box-shadow: none;
+  width: 100%; /* O botão ocupa toda a largura do contêiner */
+  line-height: 42px;
+  perspective: 230px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  display: flex; /* Flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 15px 0; /* Espaçamento interno */
 }
-#hendryw:hover {
-  background-color: #45a049;
+
+#hendryw span {
+  background: rgb(0,172,238);
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  display: block;
+  position: absolute;
+  width: 100%;
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+              7px 7px 20px 0px rgba(0,0,0,.1),
+              4px 4px 5px 0px rgba(0,0,0,.1);
+  border-radius: 5px;
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+  transition: all .3s;
 }
+
+#span1 {
+  box-shadow: -7px -7px 20px 0px #fff9,
+              -4px -4px 5px 0px #fff9,
+              7px 7px 20px 0px #0002,
+              4px 4px 5px 0px #0001;
+  transform: rotateX(90deg);
+  transform-origin: 50% 50% -20px;
+}
+
+#span2 {
+  transform: rotateX(0deg);
+  transform-origin: 50% 50% -20px;
+}
+
+#hendryw:hover #span1 {
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+              7px 7px 20px 0px rgba(0,0,0,.1),
+              4px 4px 5px 0px rgba(0,0,0,.1);
+  transform: rotateX(0deg);
+}
+
+#hendryw:hover #span2 {
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+              7px 7px 20px 0px rgba(0,0,0,.1),
+              4px 4px 5px 0px rgba(0,0,0,.1);
+  color: transparent;
+  transform: rotateX(-90deg);
+}
+
 
 /* Henrique Carvalho Gomes */
 #henrique {
@@ -1359,7 +1378,8 @@ button::before {
   -webkit-mask-size: 100%;
   cursor: pointer;
   background-color: transparent;
-  transform: translateY(8px)
+  transform: translateY(8px);
+  height: 150px;
  }
  #kaua-araujo:after {
   content: '';
@@ -1621,42 +1641,76 @@ button::before {
 }
 
 /* Kayque Soares Marques */
+.kayque {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 40px;
+}
 #kayque {
-  background-color: #FFEB3B;
-  color: black;
+  display: block;
+  width: 100%;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  background-color: transparent; /* Change as needed */
+  transition: all 0.35s;
 }
+
+#kayque span {
+  position: relative;
+  z-index: 2;
+}
+
+#kayque:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #0242f3;
+  transition: all 0.35s;
+  z-index: 1; /* Ensure the pseudo-element is behind the text */
+}
+
 #kayque:hover {
-  background-color: #fdd835;
+  color: #fff; /* Change text color on hover */
 }
 
-/* Leandra Rafaela Prudencio da Silva */
-#leandra {
-  background:linear-gradient(#ffa9f9,#fff7ad);
-  color:#333;
-  border:none;
-  padding: 15px 32px;
-  font-size: 16px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-#leandra:hover {
-  background-color: #6d4c41;
+#kayque:hover:after {
+  width: 100%; /* Expand the background on hover */
 }
 
-/* Luan Simao Fernandes */
-#luan {
-  width: 9em;
- height: 3em;
- border-radius: 30em;
- font-size: 15px;
- font-family: inherit;
- border: none;
- position: relative;
- overflow: hidden;
- z-index: 1;
- box-shadow: 6px 6px 12px #c5c5c5,
-             -6px -6px 12px #ffffff;
+/* Individual styles for the button with ID 'kayque' */
+#kayque {
+  display: block;
+  width: 100%;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  background-color: transparent; /* Change as needed */
+  transition: all 0.35s;
 }
+
+#kayque:hover {
+  color: #fff; /* Change text color on hover */
+  background-color: #1a6aa0; /* Background color on hover */
+}
+
 #luan::before {
   content: '';
   width: 0;
@@ -1703,125 +1757,98 @@ button::before {
 
 
 /* Lwara Gabrielly Soares de Souza */
-#lwara {
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-    padding: 0;
+  .wrap {
+    height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: #ff0000;
+    justify-content: center;
   }
-  
-  a {
-    border-radius: 12px;
-    border: 3px outset #888;
-    position: relative;
-    display: inline-block;
-    padding: 15px 30px;
-    color: #eee;
+
+  #lwara {
+    min-width: 300px;
+    min-height: 60px;
+    display: inline-flex;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    overflow: hidden;
-    
-    box-shadow: 0 0 10px rgb(0, 0, 0, 1);
-    font-family: verdana;
-    font-size: 28px;
-    font-weight: bolder;
-    text-decoration: none;
-    background:linear-gradient(160deg, #666, #444);
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+    text-align: center;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #d3d3d3;
+    background: #445ce9;
+  background: linear-gradient(90deg, rgb(230, 101, 219) 0%, rgb(223, 75, 215) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
   
-    transition: 0.2s;
-  
-  }
-  a:active {
-    border: 3px outset #ddd;
-    color: #fff;
-    background: linear-gradient(160deg, #666, #444);
-    text-shadow: 0px 0px 4px #ccc;
-    box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
-    transition-delay: 1s;
-  }
-  
-  a span {
+    #lwara::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #df00e7;
+    box-shadow: 0 0 60px rgba(207, 97, 193, 0.64);
     position: absolute;
-    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
   }
   
-  a span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #eee);
-  }
-  a:active span:nth-child(1) {
-    left: 100%;
-    transition: 1s;
-  }
-  a span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #eee);
-  }
-  a:active span:nth-child(2) {
-    top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-  }
-  a span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #eee);
-  }
-  a:active span:nth-child(3) {
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
+  #lwara:hover, 
+  #lwara:focus {
+    color: #313133;
+    transform: translateY(-6px);
   }
   
-  a span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #eee);
+  #lwara:hover::before, 
+  #lwara:focus::before {
+    opacity: 1;
   }
-  a:active span:nth-child(4) {
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.75s;
+  
+  #lwara::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #f709e3;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
   }
-}
+  
+  #lwara:hover::after, 
+  #lwara:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+
 #lwara:hover {
   background-color: #c0ca33;
-}
-
-/* Micael Inacio Noronha Oliveira */
-#micael {
-  background-color: #FF9800;
-  color: white;
-}
-#micael:hover {
-  background-color: #fb8c00;
-}
-
-/* MICHELE DE FREITAS CARDOSO */
-#michele {
-  background-color: #9C27B0;
-  color: white;
-}
-#michele:hover {
-  background-color: #8e24aa;
 }
 
 /* Miguel Jonathan Gonçalves */
@@ -2012,15 +2039,6 @@ button::before {
   }
 }
 
-/* Pedro Henrique Gomes de Amorim */
-#pedro-gomes {
-  background-color: #FF5722;
-  color: white;
-}
-#pedro-gomes:hover {
-  background-color: #f4511e;
-}
-
 /* Pedro Lucas Silva */
 #pedro-lucas {
   padding: 15px 30px; /* Espaçamento interno */
@@ -2182,7 +2200,7 @@ button::before {
 }
 
 #lenon {
-  width: 100%; /* Ajuste conforme necessário */
+  width: 100%; /* Deixa a largura automática para o ajuste de conteúdo */
   line-height: 40px;
   font-size: 18px;
   font-family: sans-serif;
@@ -2193,6 +2211,8 @@ button::before {
   position: relative;
   transition: all .35s;
   background-color: #eb0909;
+  display: inline-block; /* Permite que o botão se ajuste ao conteúdo e seja centralizável */
+  margin: 20px auto; /* Adiciona margem e centraliza horizontalmente */
 }
 
 #lenon span {
@@ -2218,6 +2238,7 @@ button::before {
 #lenon:hover:after {
   width: 100%; /* Preenche o fundo ao passar o mouse */
 }
+
 /* Rodapé */
 footer {
   background-color: #005caa;
